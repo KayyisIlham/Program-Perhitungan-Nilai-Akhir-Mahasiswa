@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	string nama,nim,kelas;
+	float tugas,uts,uas,hadir,akhir;
+	char huruf;
+
+	cout << "Masukan nama anda  : ";
+	cin >> nama;
+	cout << "Masukan NIM anda   : ";
+	cin >> nim;
+	cout << "Masukan kelas anda : ";
+	cin >> kelas;
+	cout << "----------------------------------\n";
+	cout << "Masukan nilai tugas         : ";
+	cin >> tugas;
+	cout << "Masukan nilai uts           : ";
+	cin >> uts;
+	cout << "Masukan nilai uas           : ";
+	cin >> uas;
+	cout << "Masukan kehadiran mahasiswa : ";
+	cin >> hadir;
+	cout << "----------------------------------\n";
+	
+	akhir = (tugas*0.2)+(uts*0.3)+(uas*0.4)+(hadir*0.1);
+	if (akhir >= 80) {
+		huruf = 'A';
+	} else if (akhir >= 70) {
+		huruf = 'B';
+	} else if (akhir >= 60) {
+		huruf = 'C';
+	} else if (akhir >= 50) {
+		huruf = 'D';
+	} else {
+		huruf = 'E';
+	}
+	
+	cout << "Nilai Akhir : " << akhir << "\n";
+	cout << "Nilai Huruf : " << huruf << "\n";
+	
+}
